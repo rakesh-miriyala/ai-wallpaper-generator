@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+AI Vibe Wallpaper Generator
+Create the perfect, unique wallpaper for your desktop with the power of AI. This application allows you to generate stunning, high-resolution images from simple text descriptions. Describe your ideal scene, and let the AI bring it to life!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+✨ Live Demo
+[Link to your deployed application will go here. You can add this later after deploying to a service like Vercel or Netlify.]
 
-## Available Scripts
+Features
+AI Image Generation: Utilizes Google's powerful Imagen model to create high-quality images from text prompts.
 
-In the project directory, you can run:
+AI Prompt Enhancement: Employs the Gemini LLM to analyze your basic ideas and transform them into rich, artistic, and detailed prompts for better image results.
 
-### `npm start`
+Responsive Design: A clean, dark-themed interface that looks great on any device.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Easy to Use: Simply type your idea, enhance it with a click, and generate your custom wallpaper.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Downloadable Images: Directly download the generated 1920x1080 wallpaper to use on your desktop.
 
-### `npm test`
+Technologies Used
+React: A JavaScript library for building user interfaces.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Tailwind CSS: A utility-first CSS framework for rapid UI development.
 
-### `npm run build`
+Google Gemini API: The backend engine for both text-based prompt enhancement (Gemini) and image generation (Imagen).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Setup and Installation
+To get a local copy up and running, follow these simple steps.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Prerequisites
+Node.js: Make sure you have Node.js installed. You can download it from nodejs.org.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Google AI API Key: You will need an API key from Google AI Studio to use the Gemini and Imagen models.
 
-### `npm run eject`
+Visit Google AI Studio.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Sign in and click "Get API key".
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Installation
+Clone the repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Navigate to the project directory:
 
-## Learn More
+cd your-repository-name
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Install NPM packages:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm install
 
-### Code Splitting
+Create an environment file:
+Create a file named .env in the root of your project folder and add your API key:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+REACT_APP_GEMINI_API_KEY=YOUR_API_KEY_HERE
 
-### Analyzing the Bundle Size
+Note: The React code I provided doesn't use an environment variable, but this is the standard and most secure way to handle API keys in a real project. You would need to modify the fetch calls in App.js to use process.env.REACT_APP_GEMINI_API_KEY instead of an empty string.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Start the development server:
 
-### Making a Progressive Web App
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The application will open automatically in your browser at http://localhost:3000.
 
-### Advanced Configuration
+Usage
+Enter a basic idea for your wallpaper into the text area (e.g., "a cat sitting on a stack of books").
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+(Optional) Click the "✨ Enhance Prompt" button to let the AI rewrite your idea into a more descriptive prompt.
 
-### Deployment
+Click the "Generate Wallpaper" button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Wait for the AI to create your image.
 
-### `npm run build` fails to minify
+Once the image appears, click on it to download it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License
+Distributed under the MIT License. See LICENSE file for more information.
+
+Contact
+Project Link: rakesh-miriyala/ai-wallpaper-generator
