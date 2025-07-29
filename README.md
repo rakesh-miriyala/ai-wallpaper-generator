@@ -1,4 +1,5 @@
 AI Vibe Wallpaper Generator
+
 Create the perfect, unique wallpaper for your desktop with the power of AI. This application allows you to generate stunning, high-resolution images from simple text descriptions. Describe your ideal scene, and let the AI bring it to life!
 
 ✨ Live Demo
